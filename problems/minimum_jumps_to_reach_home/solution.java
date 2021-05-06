@@ -6,7 +6,7 @@ class Solution {
         int target
     ) {
         Arrays.sort(forbidden);
-        int max = Math.max(forbidden[forbidden.length - 1], target) + 2 * forward + backward;
+        int max = Math.max(forbidden[forbidden.length - 1], target) + forward + backward;
         Queue<PositionMeta> queue = new LinkedList<>();
         Set<PositionMeta> visited = new HashSet<>();
         PositionMeta start = new PositionMeta(0, 0, false);
